@@ -66,7 +66,7 @@ public class MODUL_8_7 {
     {
         driver.navigate().to("http://qa.skillbox.ru/module16/maincatalog/");
 //        Заголовок пятого курса.
-        var Title_5_Locator = By.xpath("//*[@class = 'baseCard pageCreate__card'][5]//span[@class = 'baseCard__title']");
+        var Title_5_Locator = By.xpath("(//span)[5]");
 //        Элемент с учебным периодом последнего курса
         var BaseKartLastPeriod = By.xpath("//*[@class = 'baseCard pageCreate__card'][last()]//div[@class = 'baseCard__label']");
 //        Необязательное задание. Все div, которые являются непосредственными родителями для ссылок с href='#'
