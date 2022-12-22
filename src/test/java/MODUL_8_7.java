@@ -65,10 +65,10 @@ public class MODUL_8_7 {
     public void TestModul_8_7_2()
     {
         driver.navigate().to("http://qa.skillbox.ru/module16/maincatalog/");
-        //        Заголовок пятого курса.
-        var Title_5_Locator = By.xpath("//div[@class = 'pageCreate']//div[5]//span[@class='baseCard__title']");
+//        Заголовок пятого курса.
+        var Title_5_Locator = By.xpath("//*[@class = 'baseCard pageCreate__card'][5]//span[@class = 'baseCard__title']");
 //        Элемент с учебным периодом последнего курса
-        var BaseKardLastPeriod = By.xpath("//div[@class='pageCreate__cards']//div[contains(@class, 'baseCard')][contains(@class, 'pageCreate__card')][last()]//div[@class='baseCard__label']");
+        var BaseKartLastPeriod = By.xpath("//*[@class = 'baseCard pageCreate__card'][last()]//div[@class = 'baseCard__label']");
 //        Необязательное задание. Все div, которые являются непосредственными родителями для ссылок с href='#'
         var DivLocator = By.xpath("//a[@href = '#']/..");
 //        Необязательное задание. Преобразуйте предыдущий локатор, чтобы он возвращал пятый элемент.
